@@ -1,6 +1,8 @@
 $('.beneficiaries-slider').slick({
   dots: false,
   arrows: false,
+  autoplay: true,
+  autoplaySpeed: 2000,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -39,6 +41,8 @@ $('.beneficiaries-slider').slick({
 $('.gallery-slider').slick({
   dots: false,
   arrows: false,
+  autoplay: true,
+  autoplaySpeed: 2000,
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -68,6 +72,8 @@ $('.gallery-slider').slick({
 $('.news-slider').slick({
   dots: false,
   arrows: false,
+  autoplay: true,
+  autoplaySpeed: 2000,
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 1,
