@@ -2,7 +2,7 @@ $('.beneficiaries-slider').slick({
   dots: false,
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 3000,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
