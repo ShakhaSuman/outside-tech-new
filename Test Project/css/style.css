@@ -70,8 +70,6 @@ h6 {
 }
 
 .btn:focus {
-    outline: 0;
-    border: 0;
     box-shadow: none;
 }
 
@@ -181,6 +179,49 @@ header {
     margin: 2.5rem 0 -20rem 0;
 }
 
+/*Latest News*/
+.latest-news {
+    padding-bottom: 5rem;
+}
+
+.latest-news h4 {
+    margin-bottom: 2rem;
+}
+
+.news-card {
+    position: relative;
+    padding: 2.3rem;
+    border: 1px solid #fff;
+}
+
+.news-card h2 {
+    margin-bottom: 0;
+}
+
+.news-card h6 {
+    font-family: 'Inter';
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #74788A;
+}
+
+.news-card a {
+    color: #3C3C3C;
+}
+
+.stretched-link:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.news-card-alt p {
+    font-family: 'Galaxie Copernicus';
+}
+
 /*Mission*/
 .mission {
     background: #8C2531;
@@ -212,7 +253,8 @@ header {
 }
 
 .beneficiaries h4,
-.gallery h4 {
+.gallery h4,
+.latest-news h4 {
     font-family: 'Inter';
     font-weight: 700;
     text-transform: uppercase;
@@ -284,6 +326,7 @@ header {
 
 .gallery-slider .slick-current {
     margin-top: 5rem;
+    transition: .3s ease;
 }
 
 /*Footer*/
@@ -352,9 +395,19 @@ footer ul {
     margin: 0 -15px;
 }
 
+@media(min-width:992px) {
+    .news-card img {
+        width: 100%;
+    }
+}
+
 @media(max-width:1439px) {
     .mission {
         padding: 3rem;
+    }
+
+    .news-card {
+        padding: 2rem 1.5rem;
     }
 }
 
@@ -364,7 +417,7 @@ footer ul {
     }
 
     h2 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     h3 {
@@ -377,6 +430,18 @@ footer ul {
 
     h5 {
         font-size: 20px;
+    }
+
+    .latest-news {
+        padding-bottom: 3rem;
+    }
+
+    .latest-news h4 {
+        margin-bottom: 1rem;
+    }
+
+    .news-card {
+        padding: 1.5rem;
     }
 
     .gallery-slider {
@@ -489,6 +554,20 @@ footer ul {
         margin: 1.5rem 0 -8rem 0;
     }
 
+    .latest-news {
+        padding-bottom: 2rem;
+    }
+
+    .news-card {
+        padding: 1rem;
+    }
+
+    .news-card img {
+        height: 223px;
+        width: 100%;
+        object-fit: cover;
+    }
+
     .mission {
         padding: 2rem;
     }
@@ -517,6 +596,14 @@ footer ul {
 
     h4 {
         font-size: 1.125rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    .news-card img {
+        height: 150px;
     }
 
     .beneficiaries {
@@ -579,6 +666,11 @@ footer ul {
     .btn-arrow:before {
         height: 40px;
         right: 40px;
+    }
+
+    .beneficiaries .item {
+        max-width: 320px;
+        margin: 0 auto;
     }
 
     .mission {

@@ -27,7 +27,7 @@ $('.beneficiaries-slider').slick({
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerPadding: '0'
+          centerPadding: '30px'
         }
       }
       // You can unslick at a given breakpoint now by adding:
@@ -39,23 +39,53 @@ $('.beneficiaries-slider').slick({
 $('.gallery-slider').slick({
   dots: false,
   arrows: false,
-    speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 992,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          adaptiveHeight: true
         }
       },
       {
         breakpoint: 576,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+});
+
+$('.news-slider').slick({
+  dots: false,
+  arrows: false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          
         }
       }
       // You can unslick at a given breakpoint now by adding:
